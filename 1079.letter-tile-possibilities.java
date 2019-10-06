@@ -18,6 +18,7 @@ class Solution {
         int count = 0;
         for(int i = 0; i < 26; i++){
             if(tilesCounter[i] >0){
+                // think the takeoff alphabet as one permutation
                 tilesCounter[i] --;
                 count += 1 + countPossibilities(tilesCounter);
                 tilesCounter[i] ++;
