@@ -30,6 +30,8 @@ class Solution {
             return res;
         }
         
+        /*
+        meaningless to keep this
         if (N == 3){
             TreeNode node = new TreeNode(0);
             node.left = new TreeNode(0);
@@ -37,7 +39,7 @@ class Solution {
             res.add(node);
             return res;
         }
-        
+        */
         // at first make wrong i initial value, not start from 0
         for(int i = 1; i <= N - 1; i = i + 2){
             // need to claim the object type in list!
