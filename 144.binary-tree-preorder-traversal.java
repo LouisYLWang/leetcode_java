@@ -15,6 +15,18 @@
  * }
  */
 class Solution {
+    
+    // recursive, a little faster
+    List<Integer> res = new ArrayList<>();
+    public List<Integer> preorderTraversal(TreeNode root) {
+        if(root != null){
+            res.add(root.val);
+            preorderTraversal(root.left); 
+            preorderTraversal(root.right); 
+        }
+        return res;
+    }
+    
     // interation
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
